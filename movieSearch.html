@@ -4,45 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Movie Search</title>
 
-  <script src="movieSearch.js"></script>
   <link rel="stylesheet" href="movieSearch.css">
-
-  <!-- <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-      }
-    </style> -->
-
-  <title>Movie Search Site</title>
+  <script src="movieSearch.js" defer></script>
 
 </head>
 
 <body>
 
-  <div class="home">
+  <div class="container">
 
-    <div class="search">
-      <p class="SearchTital">Search Movie Tital</p>
+    <h1 class="title">🎬 Movie Search</h1>
 
-      <input id="input" type="text">
+    <div class="search-box">
+      <input id="input" type="text" placeholder="Enter movie title..." />
       <button onclick="searchMovie()">Search</button>
-
     </div>
 
-    <div class="MovieDetails">
+    <div class="movie-details" id="movieDetails" style="display: none;">
 
-      <span id="Mtital">Movie Tital : </span> <br>
-      <span id="Mname">Movie Name : </span> <br>
-      <span id="Myear">Released Year: </span> <br>
-      <p id="MDes">Description: </p> <br>
+      <img id="Mposter" src="" alt="Movie Poster" />
+      <h2 id="Mtital"></h2>
 
+      <p><strong>Released Year:</strong> <span id="Myear"></span></p>
+      <p><strong>Released Date:</strong> <span id="Mrelease"></span></p>
+      <p><strong>Genre:</strong> <span id="Mgenre"></span></p>
+      <p><strong>Director:</strong> <span id="Mdirector"></span></p>
+      <p><strong>Actors:</strong> <span id="Mactors"></span></p>
+      <p><strong>Runtime:</strong> <span id="Mruntime"></span></p>
+      <p><strong>Language:</strong> <span id="Mlanguage"></span></p>
+      <p><strong>Awards:</strong> <span id="Mawards"></span></p>
+      <p><strong>IMDB Rating:</strong> <span id="Mrating"></span></p>
+      <p><strong>Description:</strong> <span id="MDes"></span></p>
 
     </div>
 
   </div>
-
 
 </body>
 
