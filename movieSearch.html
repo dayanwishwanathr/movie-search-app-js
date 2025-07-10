@@ -2,28 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="movieSearch.js"></script>
-    <link rel="stylesheet" href="movieSearch.css">
-    
-    <!-- <script src="https://cdn.tailwindcss.com"></script>
+  <script src="movieSearch.js"></script>
+  <link rel="stylesheet" href="movieSearch.css">
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
       @theme {
         --color-clifford: #da373d;
       }
     </style> -->
-    
-    <title>Movie Search Site</title>
+
+  <title>Movie Search Site</title>
 
 </head>
 
 <body>
 
-    <h1 class="SearchTital">Search Movie Tital</h1>
-    <input type="text"> 
-    <button>Search</button>
+  <div class="home">
+
+    <div class="search">
+      <p class="SearchTital">Search Movie Tital</p>
+
+      <input id="input" type="text">
+      <button onclick="searchMovie()">Search</button>
+
+    </div>
+
+    <div class="MovieDetails">
+
+      <span id="Mtital">Movie Tital : </span> <br>
+      <span id="Mname">Movie Name : </span> <br>
+      <span id="Myear">Released Year: </span> <br>
+      <p id="MDes">Description: </p> <br>
+
+
+    </div>
+
+  </div>
+
 
 </body>
 
