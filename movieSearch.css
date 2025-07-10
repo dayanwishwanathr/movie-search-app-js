@@ -1,3 +1,28 @@
-h1 {
-    color: blue;
+body {
+    background-color: rgb(194, 173, 173);
+    text-align: center;
 }
+
+.home {
+    background-color: rgb(71, 211, 157);
+    padding: auto;
+}
+
+.search {
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid firebrick;
+
+}
+
+.SearchTital{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.MovieDetails {
+    font-size: 20px;
+    font-weight: 600;
+}
+
